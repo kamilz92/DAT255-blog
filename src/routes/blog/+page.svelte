@@ -2,6 +2,8 @@
   import Articel from "../../components/Articel.svelte";
   import Codesnipet from "../../components/Codesnipet.svelte";
   import Paragraph from "../../components/Paragraph.svelte";
+
+  import gradio from '../../lib/images/gradio.png';
 </script>
 
 <svelte:head>
@@ -45,7 +47,8 @@
     text="Vi var veldig begrenset til hva vi kunne gjøre i forhold til hvilke datasett vi kunne finne. Vi brukte noen av de som var vedlagt i oppgaven, men ellers fant vi lite på nett som virket relevant for hva vi ville gjøre i oppgaven. Men likevel har vi fått eksperimentert litt og kommet fram til at for noen oppgaver så kan maskinlæring være veldig nyttig, men enkelte oppgaver er ikke egnet for dette."
   />
 </Articel>
-
+<img class="my-4" src={gradio} alt="gradio interface" />
+<p>Vi prøvde å kombinere alle modeller i en større webapplikasjon men det gikk ikke. Forsøket kan dere se under.</p>
 <Articel title="Integreringsforsøk: Svelte og Gradio">
   <Paragraph
     bigP={true}
